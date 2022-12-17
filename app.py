@@ -18,7 +18,7 @@ class lxautoedit(Client):
             api_hash = Info.API_HASH,           
             workers = 20,
             plugins = dict(
-                root="Plugins"
+                root="LxAutoEdit"
             )
         )
 
