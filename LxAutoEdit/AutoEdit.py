@@ -7,20 +7,16 @@ logging.basicConfig(level=logging.DEBUG,
 logger = logging.getLogger(__name__)
 
 
+media_filter = filters.document | filters.video | filters.audio
 usercaption_position = "top"
 caption_position = usercaption_position.lower()
-caption_text = Info.CAPTION_TXT
+caption_text = "@HQFilms4u"
 
-@Client.on_message(filters.command("start") & filters.incoming)
-async def start(bot, message):
-        await message.reply("Hello there, I'm Auto Caption Bot! Join @Lx_0980")
-
-
-@Client.on_message(filters.channel)
+@Client.on_message(filters.channel & (media_filter))
 async def editing(bot, message):
       try:
          media = message.document or message.video or message.audio
-         caption_text = Info.CAPTION_TXT
+         caption_text = "@HQFilms4u"
       except:
          caption_text = ""
          pass 
