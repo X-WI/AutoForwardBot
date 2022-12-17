@@ -1,3 +1,4 @@
+import pyrogram 
 import logging
 from pyrogram import Client, filters, enums
 
