@@ -5,4 +5,4 @@ class Info(object):
       API_ID = 26686963
       BOT_TOKEN = "5300015911:AAE0jwmVovvrv6zH9dC8TfE5-UlFIVOyX78"
       
-      CHANNEL_ID = -1001743048821
+      CHANNEL_ID = 1743048821
