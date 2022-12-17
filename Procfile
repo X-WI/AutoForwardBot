@@ -1,1 +1,1 @@
-worker: python3 -m LxAutoEdit 
+worker: python3 app.py 
