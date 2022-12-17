@@ -1,6 +1,7 @@
 import logging
 import pyrogram
 from pyrogram import Client, filters, enums
+from info import Info
 
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -11,10 +12,10 @@ class lxautoedit(Client):
     
     def __init__(self):
         super().__init__(
-            name="Auto-edit",
-            bot_token="5300015911:AAE0jwmVovvrv6zH9dC8TfE5-UlFIVOyX78",
-            api_id=26686963,
-            api_hash="7cce2717e7e89eb534b7da973926f6c4",                        
+            name = "Auto-edit",
+            bot_token = Info.BOT_TOKEN,
+            api_id = Info.API_ID,
+            api_hash = Info.API_HASH,           
             workers = 20,
             plugins = dict(
                 root="Plugins"
