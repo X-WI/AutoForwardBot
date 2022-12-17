@@ -21,6 +21,4 @@ class lxautoedit(Client):
             )
         )
 
-if __name__ == "__main__" :
-    lxautoedit().run()
-        
+
