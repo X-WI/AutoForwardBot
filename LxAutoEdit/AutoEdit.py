@@ -6,6 +6,11 @@ logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+
+usercaption_position = "top"
+caption_position = usercaption_position.lower()
+caption_text = "@HQFilms4U"
+
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(bot, message):
         await message.reply("Hello there, I'm Auto Caption Bot! Join @Lx_0980")
