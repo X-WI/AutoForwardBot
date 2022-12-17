@@ -2,6 +2,7 @@ import os, time
 from pyrogram.errors import FloodWait
 from pyrogram import Client, filters, enums 
 from info import Info
+from typing import Union, Optional, AsyncGenerator
 import logging
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
