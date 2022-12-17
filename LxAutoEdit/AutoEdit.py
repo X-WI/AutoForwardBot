@@ -1,6 +1,6 @@
 # @Lx_0988
-from info import Info
 import logging
+from info import Info
 from pyrogram import Client, filters, enums
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -16,7 +16,7 @@ async def start(bot, message):
         await message.reply("Hello there, I'm Auto Caption Bot! Join @Lx_0980")
 
 
-@Client.on_message(pyrogram.filters.channel)
+@Client.on_message(filters.channel)
 async def editing(bot, message):
       try:
          media = message.document or message.video or message.audio
