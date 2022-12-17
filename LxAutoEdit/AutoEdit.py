@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 usercaption_position = "top"
 caption_position = usercaption_position.lower()
-caption_text = "@HQFilms4U"
+caption_text = Info.CAPTION_TXT
 
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(bot, message):
@@ -32,7 +32,9 @@ async def editing(bot, message):
              filename = fname.replace("_", ".")
              file_caption = f"`{filename}`"  
               
-      try:             await bot.edit_message_caption(
+      try:
+          if caption_position == "top":
+             await bot.edit_message_caption(
                  chat_id=message.chat.id, 
                  message_id=message.id,
                  caption=file_caption + "\n" + caption_text,
