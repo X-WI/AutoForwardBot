@@ -3,6 +3,13 @@ import pyrogram
 from pyrogram import Client, filters, enums
 from info import Info
 
+logging.basicConfig(level=logging.DEBUG,
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+
+logging.getLogger("pyrogram").setLevel(logging.WARNING)
+
 """
 class lxautoedit(Client):
     
@@ -28,15 +35,13 @@ class Bot(Client):
 
     def __init__(self):
         super().__init__(
-            "bot",
+            name="autobot",
             api_hash=Info.API_HASH,
             api_id=Info.API_ID,
+            bot_token=Info.BOT_TOKEN,            
             plugins={
                 "root": "LxAutoEdit"
             },
-            workers=200,
-            bot_token=Info.BOT_TOKEN,
-            sleep_threshold=10
         )
 
 
