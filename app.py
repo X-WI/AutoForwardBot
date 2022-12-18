@@ -44,6 +44,6 @@ class Bot(Client):
             },
         )
 
-
+print(Bot started!")
 app = Bot()
 app.run()
