@@ -39,7 +39,7 @@ async def forward(bot, update):
                  from_chat_id=update.chat.id,
                  message_id=update.id,
                  caption=update.caption  + "\n" + replace_text,                
-                 parse_mode=enums.ParseMode.MARKDOWN
+                 parse_mode=enums.ParseMode.MARKDOWN,
              )
 
       except FloodWait as e:
