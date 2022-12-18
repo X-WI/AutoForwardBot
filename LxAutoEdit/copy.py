@@ -11,7 +11,7 @@ async def forward(bot, update):
             chat_id=-1001743048821,
             from_chat_id=update.chat.id,
             message_id=update.id,
-            caption=update.caption
+            caption=update.caption,
             parse_mode=enums.ParseMode.MARKDOWN
         )
     except FloodWait as e:
