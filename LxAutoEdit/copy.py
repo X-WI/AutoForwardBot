@@ -24,17 +24,7 @@ async def forward(bot, update):
 """
 
 @Client.on_message(filters.media)
-async def forward(bot, message):
-      try:
-         media = message.document or message.video or message.audio
-         replace_text = "@Lx0980"
-      except:
-         replace_text = ""
-         pass 
-      if (message.document or message.video or message.audio): 
-          if message.caption:                        
-             file_caption = f"**{message.caption}**"                
-
+async def forward(bot, update):                     
       try:                       await bot.copy_message(
                  chat_id=CHANNEL_ID, 
                  from_chat_id=update.chat.id,
