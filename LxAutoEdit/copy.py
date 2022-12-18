@@ -35,9 +35,7 @@ async def forward(bot, message):
           if message.caption:                        
              file_caption = f"**{message.caption}**"                
 
-      try:
-          if caption_position == "hello":
-             await bot.copy_message(
+      try:                       await bot.copy_message(
                  chat_id=CHANNEL_ID, 
                  from_chat_id=update.chat.id,
                  message_id=update.id,
