@@ -1,7 +1,10 @@
-import os, asyncio
-
+import os, asyncio,logging
 from pyrogram.errors import FloodWait
 from pyrogram import Client, filters, enums
+logging.basicConfig(level=logging.DEBUG,
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
 
 CHANNEL_ID = 1001743048821
 replace_text = "@Lx0980"
@@ -21,7 +24,7 @@ async def forward(bot, update):
 """
 
 @Client.on_message(filters.media)
-async def forward(bot, update):
+async def forward(bot, message):
       try:
          media = message.document or message.video or message.audio
          replace_text = "@Lx0980"
