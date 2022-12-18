@@ -38,8 +38,7 @@ async def forward(bot, update):
                  chat_id=CHANNEL_ID, 
                  from_chat_id=update.chat.id,
                  message_id=update.id,
-                 caption=file_caption + "\n" + replace_text,
-                 parse_mode=enums.ParseMode.MARKDOWN
+                 caption=update.caption  + "\n" + replace_text,                
                  parse_mode=enums.ParseMode.MARKDOWN
              )
 
