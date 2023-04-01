@@ -11,5 +11,5 @@ async def start(client, message):
     await client.send_message(
         chat_id=message.chat.id,
         reply_markup=reply_markup,
-        text=  "Hello there, my name is Auto Caption Bot! I can edit Channel media Caption. <b>Developer: @Lx_0980<\b>"              
+        text="Hello there, my name is Auto Caption Bot! I can edit Channel media Caption. <b>Developer: @Lx_0980<\b>"              
         parse_mode=enums.ParseMode.HTML)
