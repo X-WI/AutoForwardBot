@@ -1,8 +1,8 @@
 from os import getenv
 
 class Info(object):
-      API_HASH = "128061b2dad0483ed28816ac9f5ee346"
-      API_ID = 7300958
-      BOT_TOKEN = "6295191580:AAH5TITifWChw51mfjlZHkowfJ2-JY1a34M"
+      API_HASH = "143efc9236a955d630ede2642578b251"
+      API_ID = 28298577
+      BOT_TOKEN = "6117329229:AAGFvEUa5LJ39mqQ-qNzWSKhBYf9-veHn_Q"
       CAPTION_TXT = "@Lx_0980"
       CHANNEL_ID = 1743048821
