@@ -10,13 +10,13 @@ logger = logging.getLogger(__name__)
 media_filter = filters.document | filters.video | filters.audio
 usercaption_position = "top"
 caption_position = usercaption_position.lower()
-caption_text = "➠ @Hollywood_0980\n➠ @DFF_UPDATES"
+caption_text = "@TheDXClassic"
 
 @Client.on_message(filters.channel & (media_filter))
 async def editing(bot, message):
       try:
          media = message.document or message.video or message.audio
-         caption_text = "➠ @Hollywood_0980\n➠ @DFF_UPDATES"
+         caption_text = "@TheDXClassic"
       except:
          caption_text = ""
          pass 
