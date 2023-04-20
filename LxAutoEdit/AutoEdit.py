@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 media_filter = filters.document | filters.video | filters.audio
 usercaption_position = "top"
 caption_position = usercaption_position.lower()
-caption_text = "@DFF_UPDATES 🌐 @Hollywood_0980"
+caption_text = "➠ @Hollywood_0980\n➠ @DFF_UPDATES"
 
 @Client.on_message(filters.channel & (media_filter))
 async def editing(bot, message):
