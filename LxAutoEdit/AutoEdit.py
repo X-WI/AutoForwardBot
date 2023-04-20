@@ -16,7 +16,7 @@ caption_text = "➠ @Hollywood_0980\n➠ @DFF_UPDATES"
 async def editing(bot, message):
       try:
          media = message.document or message.video or message.audio
-         caption_text = "@DFF_UPDATES 🌐 @Hollywood_0980"
+         caption_text = "➠ @Hollywood_0980\n➠ @DFF_UPDATES"
       except:
          caption_text = ""
          pass 
