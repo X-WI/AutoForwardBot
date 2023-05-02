@@ -15,8 +15,7 @@ async def forward(bot, update):
             message_id=update.id, 
             caption=f"**{update.caption}**",          
             parse_mode=enums.ParseMode.MARKDOWN                     
-        )
-    
+        )    
     except Exception as e:
         logger.exception(e)
 
@@ -30,7 +29,6 @@ async def forward2(bot, update):
             caption=f"**{update.caption}**",          
             parse_mode=enums.ParseMode.MARKDOWN                     
         )
-
     except Exception as e:
         logger.exception(e)
         
