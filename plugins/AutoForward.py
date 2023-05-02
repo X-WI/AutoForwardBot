@@ -16,7 +16,8 @@ async def forward(bot, update):
             caption=f"**{update.caption}**",          
             parse_mode=enums.ParseMode.MARKDOWN                     
         )
-   except Exception as e:
+    
+    except Exception as e:
         logger.exception(e)
 
 @Bot.on_message(filters.chat(-1001277498778) & media_filter)
@@ -30,7 +31,7 @@ async def forward2(bot, update):
             parse_mode=enums.ParseMode.MARKDOWN                     
         )
 
-   except Exception as e:
+    except Exception as e:
         logger.exception(e)
         
       
