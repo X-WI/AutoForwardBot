@@ -2,7 +2,7 @@ import os, asyncio, logging
 from pyrogram import filters, enums
 import logging
 logger = logging.getLogger(__name__)
-from bot import Bot
+from main import Bot
 
 media_filter = filters.document | filters.video 
 
