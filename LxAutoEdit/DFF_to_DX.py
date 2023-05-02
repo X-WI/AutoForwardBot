@@ -2,7 +2,7 @@ import os, asyncio, logging
 from pyrogram.errors import FloodWait
 from pyrogram import Client, filters, enums
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.ERROR)
+
 
 media_filter = filters.document | filters.video 
 
